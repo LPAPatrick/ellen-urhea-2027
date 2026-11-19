@@ -11,6 +11,40 @@
 <style>
 :root{color-scheme:dark;--bg:#0b0c1e;--card:#17182e;--raised:#20213b;--border:#343652;--muted:#b4b7cb;--text:#f8f8ff;--accent:#c3a5ff;--accent2:#8d6af4;--green:#70e1b5;--amber:#ffcf83;--red:#ff9eae}
 *{box-sizing:border-box}html{background:var(--bg)}body{margin:0;min-height:100dvh;background:radial-gradient(ellipse at 50% -80px,#392763 0,transparent 52%),var(--bg);font:15px/1.45 -apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;color:var(--text);padding:env(safe-area-inset-top) 0 calc(85px + env(safe-area-inset-bottom))}button,input,select,textarea{font:inherit}button{cursor:pointer}button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible,a:focus-visible{outline:2px solid var(--accent);outline-offset:3px}a{color:var(--accent)}.wrap{max-width:710px;margin:auto;padding:0 15px}.top{padding:25px 0 14px}.eyebrow{color:var(--accent);font-size:11px;font-weight:850;letter-spacing:.16em;text-transform:uppercase}.top h1{font-size:29px;letter-spacing:-.035em;line-height:1.1;margin:5px 0}.top p{font-size:13px;color:var(--muted);margin:7px 0 0}.sessionbar{display:flex;gap:9px;align-items:end;margin:7px 0 18px}.sessionbar .field{flex:1}.field{display:flex;flex-direction:column;gap:6px}.field label{color:var(--muted);font-size:12px;font-weight:800}.control{background:#0c0c1d;border:1px solid #4b4b68;color:var(--text);width:100%;min-height:47px;padding:10px 12px;border-radius:12px}.control:focus{border-color:var(--accent)}.btn{border:1px solid var(--border);border-radius:13px;min-height:45px;padding:10px 14px;background:var(--raised);color:var(--text);font-weight:800}.btn.primary{background:var(--accent);color:#1e1233;border-color:var(--accent)}.btn.small{padding:7px 10px;min-height:38px;font-size:13px}.btn.ghost{background:transparent;color:var(--muted)}.btn.danger{border-color:#6f3449;color:#ffc2ca}.card{background:var(--card);border:1px solid var(--border);border-radius:20px;padding:17px;margin-bottom:14px;box-shadow:0 10px 35px #0002}.hero{background:linear-gradient(135deg,#282044,#1a1b37 76%)}.split{display:flex;justify-content:space-between;align-items:start;gap:12px}.bigscore{font-size:52px;font-weight:900;letter-spacing:-.06em;line-height:1.13}.bigscore span{font-size:20px;color:var(--muted);letter-spacing:0}.smallcap{font-size:11px;color:var(--muted);font-weight:850;text-transform:uppercase;letter-spacing:.08em}.hint{font-size:13px;color:var(--muted)}.number{font-size:22px;font-weight:850}.pill{display:inline-block;border:1px solid #514b6f;background:#27243d;border-radius:999px;color:#e5dafc;padding:4px 9px;font-size:11px;font-weight:800}.pill.good{color:#a7f2d3;border-color:#386c60}.pill.warn{color:#ffd9a0;border-color:#71613f}.progress{height:10px;background:#0c0c1b;border:1px solid #39344d;border-radius:999px;overflow:hidden;margin:12px 0}.fill{height:100%;background:linear-gradient(90deg,#806be6,#ddadff);border-radius:999px}.statrow{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:12px}.stat{background:#121327;border-radius:13px;padding:12px}.stat strong{display:block;font-size:19px}.h2{font-size:16px;font-weight:880;letter-spacing:-.01em;margin:1px 0 12px}.section-head{display:flex;align-items:center;justify-content:space-between;gap:10px;margin:21px 0 10px}.section-head h2{font-size:17px;margin:0}.category{display:flex;gap:12px;justify-content:space-between;align-items:center;width:100%;text-align:left;background:var(--card);border:1px solid var(--border);color:var(--text);border-radius:16px;padding:14px;margin:8px 0;min-height:67px}.category .catname{font-weight:800;line-height:1.28}.category .sub{font-size:12px;color:var(--muted);margin-top:3px}.category .catpoints{text-align:right;white-space:nowrap;font-weight:850;font-size:18px}.category .catpoints small{display:block;color:var(--muted);font-size:11px;font-weight:500}.row-item{display:flex;justify-content:space-between;gap:12px;padding:11px 0;border-bottom:1px solid #35334c}.row-item:last-child{border:0}.row-item .title{font-weight:780}.row-item .sub{color:var(--muted);font-size:12px}.pos{color:var(--green)}.neg{color:var(--red)}.muted{color:var(--muted)}.steps{display:flex;flex-direction:column;gap:8px}.step{background:#101124;border-radius:13px;padding:12px;display:flex;align-items:center;justify-content:space-between;gap:10px}.step strong{font-size:13px}.step span{font-size:12px;color:var(--muted)}.testcard{background:var(--card);border:1px solid var(--border);width:100%;text-align:left;color:var(--text);padding:14px;border-radius:15px;margin:6px 0;display:flex;justify-content:space-between;gap:12px;align-items:center}.testcard strong{font-size:14px}.testcard small{display:block;color:var(--muted);margin-top:4px}.testcard b{white-space:nowrap;font-size:16px}.tabs{position:fixed;z-index:20;bottom:0;left:0;right:0;background:#121126f7;display:flex;justify-content:center;gap:0;border-top:1px solid #3d3656;padding:8px max(8px,env(safe-area-inset-right)) calc(8px + env(safe-area-inset-bottom))}.tabs button{flex:1;max-width:170px;min-height:52px;background:none;color:#aaa6c2;border:0;border-radius:12px;font-size:11px;font-weight:850;padding:6px 2px}.tabs button span{display:block;font-size:21px;line-height:1.2}.tabs button.active{background:#2c2445;color:#e2c6ff}.view{display:none}.view.active{display:block}.back{border:0;color:var(--accent);background:transparent;font-weight:850;padding:5px 0 14px}.fields-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.fieldset{padding:15px;background:#121327;border-radius:14px}.fieldset h3{margin:0 0 10px;font-size:14px}.fieldset .field{margin-bottom:11px}.fieldset .field:last-child{margin:0}.pts-preview{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:12px 0}.scorepreview{padding:13px;border-radius:12px;background:#1a2035}.scorepreview strong{display:block;font-size:26px}.linkrow{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0}.linkbtn{display:inline-block;text-decoration:none;padding:10px 12px;border:1px solid #4a4168;border-radius:11px;font-size:13px;font-weight:750}.details{background:#141429;border:1px solid #35334f;padding:13px;border-radius:13px;margin-top:10px}.details summary{cursor:pointer;font-weight:850;color:var(--accent)}.scoretable{width:100%;border-collapse:collapse;font-size:13px;margin-top:11px}.scoretable td,.scoretable th{padding:7px 9px;border-bottom:1px solid #33354c;text-align:left}.tablewrap{max-height:280px;overflow-y:auto;margin-top:6px}.selectrow{display:grid;grid-template-columns:1fr 1fr;gap:10px}.notice{background:#25203a;border-left:3px solid var(--accent2);padding:12px 13px;border-radius:8px;margin:12px 0;color:#e9def9;font-size:13px}.notice.warn{border-color:#ca9b55;background:#332a27}.comparehead{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:12px}.compareitem{padding:10px 0;border-bottom:1px solid #33334c}.compareitem:last-child{border:0}.comparetop{display:flex;justify-content:space-between;align-items:center;gap:10px}.comparetop strong{font-size:13px}.comparevals{display:flex;gap:12px;align-items:center;margin-top:5px;color:var(--muted);font-size:12px}.comparevals span{min-width:52px}.row-actions{display:flex;flex-wrap:wrap;gap:9px;margin:12px 0}.row-actions .btn{flex:1}.footer{color:#8488a1;font-size:12px;text-align:center;padding:14px 0}.hidden{display:none!important}@media(max-width:410px){.wrap{padding:0 11px}.card{padding:14px}.fields-grid{grid-template-columns:1fr}.bigscore{font-size:43px}.top h1{font-size:26px}.statrow{gap:7px}.tabs button{font-size:10px}}@media(min-width:520px){.fields-grid{grid-template-columns:1fr 1fr}}
+
+/* Daily practice tracking, independent of scored test rounds. */
+.tabs button{min-width:0;letter-spacing:-.025em}
+.practice-datebar{display:grid;grid-template-columns:46px minmax(0,1fr) 46px;gap:9px;align-items:center;margin:10px 0}
+.practice-datebar .btn{padding:7px 5px;min-height:47px;font-size:23px}
+.practice-datebar input{min-width:0;max-width:100%;height:47px;appearance:auto;color-scheme:dark}
+.practice-overview{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.practice-overview .stat strong{font-size:27px;line-height:1.1;margin-top:4px}
+.practice-group{margin:17px 0 10px}
+.practice-group-heading{display:flex;justify-content:space-between;gap:12px;align-items:baseline;color:#d8c2ff;font-size:13px;font-weight:850;margin:14px 2px 8px}
+.practice-group-heading span{font-size:12px;font-weight:700;color:var(--muted)}
+.practice-row{display:flex;align-items:center;gap:12px;padding:13px 12px;margin:7px 0;border:1px solid var(--border);border-radius:14px;background:#111329;cursor:pointer;min-height:58px;-webkit-tap-highlight-color:transparent;transition:border-color .1s ease,background .1s ease}
+.practice-row.is-done{border-color:#3a6c60;background:#152b30}
+.practice-row input[type="checkbox"]{width:29px;height:29px;flex:0 0 29px;accent-color:#a8edcf;cursor:pointer}
+.practice-row .practice-name{font-size:14px;font-weight:770;line-height:1.3;flex:1;min-width:0}
+.practice-row.is-done .practice-name{color:#b8f0d7}
+.practice-week{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:5px;margin:13px 0}
+.practice-week-day{padding:10px 2px;border:1px solid #49445f;background:#121427;color:var(--text);border-radius:12px;min-height:75px;min-width:0;text-align:center}
+.practice-week-day.selected{background:#34274b;border-color:#b6a0f6}
+.practice-week-day.today{box-shadow:inset 0 0 0 1px #8b76c6}
+.practice-week-day small{display:block;font-size:10px;font-weight:800;color:var(--muted);margin-bottom:5px}
+.practice-week-day strong{font-size:16px;line-height:1.1;display:block}
+.practice-week-day em{display:block;font-size:10px;font-style:normal;color:var(--muted);margin-top:4px}
+.practice-tablehead,.practice-summaryrow{display:grid;grid-template-columns:minmax(0,1fr) 42px 48px 45px;gap:7px;align-items:center}
+.practice-tablehead{color:var(--muted);font-size:11px;font-weight:850;padding:6px 0 8px;border-bottom:1px solid var(--border)}
+.practice-summaryrow{padding:11px 0;border-bottom:1px solid #303148;font-size:13px}
+.practice-summaryrow:last-child{border:0}
+.practice-summaryrow .practice-testname{min-width:0;line-height:1.25;font-weight:700}
+.practice-summaryrow b,.practice-tablehead b{text-align:center;font-variant-numeric:tabular-nums}
+.practice-graph{height:5px;overflow:hidden;border-radius:99px;background:#26263f;margin-top:7px}
+.practice-graph .fill{height:100%;background:linear-gradient(90deg,#9670eb,#bbedcf)}
+.practice-caption{font-size:12px;color:var(--muted);margin-top:12px}
+.practice-instructions{font-size:12px;color:var(--muted);line-height:1.45}
+@media(max-width:360px){.tabs button{font-size:9px}.practice-week{gap:3px}.practice-week-day{padding:9px 1px;min-height:69px}.practice-week-day strong{font-size:14px}}
 </style>
 </head>
 <body>
@@ -20,9 +54,10 @@
 <section id="view-home" class="view active"></section>
 <section id="view-tests" class="view"></section>
 <section id="view-progress" class="view"></section>
+<section id="view-practice" class="view"></section>
 <section id="view-settings" class="view"></section>
 </div>
-<nav class="tabs" aria-label="Päävalikko"><button data-tab="home" class="active" type="button"><span>⌂</span>Yhteenveto</button><button data-tab="tests" type="button"><span>◫</span>Testit</button><button data-tab="progress" type="button"><span>↗</span>Kehitys</button><button data-tab="settings" type="button"><span>⚙</span>Asetukset</button></nav>
+<nav class="tabs" aria-label="Päävalikko"><button data-tab="home" class="active" type="button"><span>⌂</span>Yhteenveto</button><button data-tab="tests" type="button"><span>◫</span>Testit</button><button data-tab="progress" type="button"><span>↗</span>Kehitys</button><button data-tab="practice" type="button"><span>✓</span>Harjoitukset</button><button data-tab="settings" type="button"><span>⚙</span>Asetukset</button></nav>
 <script>
 'use strict';
 // Lähde: https://www.soveltuvuuskoe.fi/wp-content/uploads/2026/10/Pisteytystaulukot_koonti_2026_2027.pdf
@@ -66,6 +101,12 @@ const TESTS=[
  {id:'school',cat:'school',name:'Koulukohtainen testiosio',max:8,unit:'p',kind:'high',fields:[F('score','Koulun vahvistamat pisteet','decimal',{step:.01})],desc:'Koulukohtaisen osion sisältö ja pisteytys määräytyvät hakukoulun mukaan. Syötä vain koulun vahvistama pistemäärä (0–8). Jos osio järjestetään, se korvaa kuudesta valtakunnallisesta kokonaisuudesta heikoimman.'}
 ];
 const ALL_KEYS=TESTS.filter(t=>t.id!=='school').map(t=>t.id);
+// The original 12 scored tests have 13 daily checkboxes: the rhythm test is split in two.
+const PRACTICE_ITEMS=TESTS.filter(t=>t.id!=='school').flatMap(t=>t.id==='rhythm' ? [
+ {key:'rhythm-tempo',cat:'balance',name:'Rytmi, osa 1 (rytmi ja tempo)'},
+ {key:'rhythm-quality',cat:'balance',name:'Rytmi, osa 2 (liikkeiden laatu)'}
+] : [{key:t.id,cat:t.cat,name:t.id==='beep'?'20 m viivajuoksu (MOVE-piip-testi)':t.id==='squat'?'Valakyykky kepill\u00e4':t.name}]);
+
 const dbKey='urhea_ellen_2027_app_v1';
 const el=id=>document.getElementById(id);
 const fmt=(v,dec=2)=>v==null?'–':Number(v).toLocaleString('fi-FI',{minimumFractionDigits:dec,maximumFractionDigits:dec});
@@ -76,12 +117,12 @@ const round2=x=>Math.round((x+Number.EPSILON)*100)/100;
 const dayKey=(d=new Date())=>[d.getFullYear(),String(d.getMonth()+1).padStart(2,'0'),String(d.getDate()).padStart(2,'0')].join('-');
 const dateFi=k=>k?String(k).split('-').reverse().join('.'):'';
 const uid=()=>('k'+Date.now().toString(36)+Math.random().toString(36).slice(2,8));
-const fresh=()=>({version:1,scoring:'2026–2027',school:false,active:null,goals:{},efforts:{},sessions:[]});
-function load(){try{const x=JSON.parse(localStorage.getItem(dbKey));if(x&&x.version===1&&Array.isArray(x.sessions))return {...fresh(),...x}}catch(e){}return fresh()}
+const fresh=()=>({version:1,scoring:'2026–2027',school:false,active:null,goals:{},efforts:{},practice:{},sessions:[]});
+function load(){try{const x=JSON.parse(localStorage.getItem(dbKey));if(x&&x.version===1&&Array.isArray(x.sessions))return {...fresh(),...x,practice:(x.practice&&typeof x.practice==='object'&&!Array.isArray(x.practice))?x.practice:{}}}catch(e){}return fresh()}
 let state=load();
 if(!state.sessions.length){const id=uid();state.sessions=[{id,name:'Baseline',date:dayKey(),results:{},notes:''}];state.active=id;persist()}
 if(!state.sessions.some(s=>s.id===state.active))state.active=state.sessions[0].id;
-let tab='home',selectedTest=null,catFilter='all';
+let tab='home',selectedTest=null,catFilter='all',practiceDate=dayKey();
 function persist(){try{localStorage.setItem(dbKey,JSON.stringify(state))}catch(e){alert('Tallennus ei onnistunut. Tarkista selaimen vapaa tila.')}}
 function session(){return state.sessions.find(s=>s.id===state.active)||state.sessions[0]}
 function rawOf(t,where){return where?.[t.id]||{}}
@@ -109,7 +150,7 @@ function catScore(cat,where){const ts=TESTS.filter(t=>t.cat===cat);const vals=ts
 function totalScore(where,school=state.school){const arr=CAT.map(c=>catScore(c.id,where).points);if(arr.some(x=>x===null))return null;if(!school)return round2(arr.reduce((a,b)=>a+b,0));const sc=score(tBy('school'),where);if(sc==null)return null;return round2(arr.reduce((a,b)=>a+b,0)-Math.min(...arr)+sc)}
 function completion(where,school=state.school){const ts=TESTS.filter(t=>school||t.id!=='school');return {done:ts.filter(t=>score(t,where)!==null).length,total:ts.length}}
 function goalsFor(t){return state.goals[t.id]||{}}
-function updateTabs(){document.querySelectorAll('.tabs button').forEach(b=>b.classList.toggle('active',b.dataset.tab===tab));document.querySelectorAll('.view').forEach(v=>v.classList.toggle('active',v.id==='view-'+tab))}
+function updateTabs(){document.querySelectorAll('.tabs button').forEach(b=>b.classList.toggle('active',b.dataset.tab===tab));document.querySelectorAll('.view').forEach(v=>v.classList.toggle('active',v.id==='view-'+tab));document.querySelector('.sessionbar').classList.toggle('hidden',tab==='practice')}
 function chooseTab(next){tab=next;selectedTest=null;renderAll();window.scrollTo(0,0)}
 function renderSessionSelect(){const select=el('activeSession');select.innerHTML=state.sessions.map(s=>`<option value="${esc(s.id)}" ${s.id===state.active?'selected':''}>${esc(s.name)} · ${esc(dateFi(s.date))}</option>`).join('')}
 function bar(p,max=8){return `<div class="progress"><div class="fill" style="width:${p===null?0:Math.min(100,Math.max(0,p/max*100))}%"></div></div>`}
@@ -177,24 +218,71 @@ function renderProgress(){const ss=state.sessions;if(ss.length<2){el('view-progr
  if(state.school){const t=tBy('school'),aa=score(t,a.results),bb=score(t,b.results);html+=`<article class="card"><h3 class="h2">Koulukohtainen osio</h3><div class="row-item"><span>${aa===null?'–':fmt(aa)} → ${bb===null?'–':fmt(bb)}</span><strong>${aa===null||bb===null?'–':fmt(round2(bb-aa))+' p.'}</strong></div></article>`}
  html+='<div class="footer">Kaikki laskelmat perustuvat testikertojen tallennettuihin tuloksiin. Voit vaihtaa vertailtavia kierroksia yllä.</div>';el('view-progress').innerHTML=html;
 }
+
+// ===== DAILY PRACTICE =====
+// Stored separately from test sessions. One check per exercise per calendar day.
+function practiceDayObject(date){const v=state.practice[date];return v&&typeof v==='object'&&!Array.isArray(v)?v:{}}
+function checkedCount(date){const entry=practiceDayObject(date);return PRACTICE_ITEMS.reduce((n,t)=>n+(entry[t.key]===true?1:0),0)}
+function shiftPracticeDay(k,delta){const [y,m,d]=k.split('-').map(Number);const day=new Date(y,m-1,d,12);day.setDate(day.getDate()+delta);return dayKey(day)}
+function weekPracticeKeys(k){const [y,m,d]=k.split('-').map(Number),day=new Date(y,m-1,d,12),offset=(day.getDay()+6)%7;day.setDate(day.getDate()-offset);return Array.from({length:7},(_,i)=>shiftPracticeDay(dayKey(day),i))}
+function recentPracticeKeys(days){return Array.from({length:days},(_,i)=>shiftPracticeDay(dayKey(),i-days+1))}
+function practiceCountIn(keys,item){return keys.reduce((sum,date)=>sum+(practiceDayObject(date)[item.key]===true?1:0),0)}
+function choosePracticeDate(date){if(!/^\d{4}-\d{2}-\d{2}$/.test(date)||date>dayKey())return;const [y,m,d]=date.split('-').map(Number),dt=new Date(y,m-1,d,12);if(dayKey(dt)!==date)return;practiceDate=date;renderPractice()}
+function setPracticeCheck(id,checked){if(practiceDate>dayKey()||!PRACTICE_ITEMS.some(t=>t.key===id))return;const entry={...practiceDayObject(practiceDate)};if(checked)entry[id]=true;else delete entry[id];if(Object.keys(entry).length)state.practice[practiceDate]=entry;else delete state.practice[practiceDate];persist();renderPractice()}
+function renderPractice(){
+ if(practiceDate>dayKey())practiceDate=dayKey();
+ const n=PRACTICE_ITEMS.length,today=dayKey(),count=checkedCount(practiceDate),week=weekPracticeKeys(practiceDate),last28=recentPracticeKeys(28),allDates=Object.keys(state.practice).filter(k=>checkedCount(k)>0),weekCount=week.reduce((v,k)=>v+checkedCount(k),0),activeWeekDays=week.filter(k=>checkedCount(k)>0).length,markCount=allDates.reduce((v,k)=>v+checkedCount(k),0),active28=last28.filter(k=>checkedCount(k)>0).length;
+ const isToday=practiceDate===today;
+ let html=`<div class="section-head"><h2>Harjoitukset</h2><span class="pill">${n} harjoitetta</span></div>`;
+ html+=`<p class="hint">T\u00e4pp\u00e4\u00e4 harjoiteltu testi kerran p\u00e4iv\u00e4ss\u00e4. Kaikkia testej\u00e4 ei tarvitse tehd\u00e4 joka p\u00e4iv\u00e4. Kuittaus tallentuu heti.</p>`;
+ html+=`<article class="card hero"><div class="split"><div><div class="smallcap">${isToday?'T\u00e4n\u00e4\u00e4n':'Valittu p\u00e4iv\u00e4'} \u00b7 ${esc(dateFi(practiceDate))}</div><div class="bigscore">${count} <span>/ ${n}</span></div></div><span class="pill ${count===n?'good':count>0?'warn':''}">${count===n?'Kaikki tehty!':count===0?'Ei merkint\u00f6j\u00e4':'Harjoiteltu'}</span></div>${bar(count,n)}<div class="practice-datebar"><button class="btn" id="practicePrev" type="button" aria-label="Edellinen p\u00e4iv\u00e4">\u2039</button><input class="control" type="date" id="practiceDate" max="${today}" value="${practiceDate}" aria-label="Harjoitusp\u00e4iv\u00e4"><button class="btn" id="practiceNext" type="button" aria-label="Seuraava p\u00e4iv\u00e4" ${isToday?'disabled':''}>\u203a</button></div>${!isToday?'<button class="btn small primary" id="practiceToday" type="button">Takaisin t\u00e4h\u00e4n p\u00e4iv\u00e4\u00e4n</button>':''}</article>`;
+ html+=`<article class="card"><h3 class="h2">P\u00e4iv\u00e4n harjoitukset</h3>`;
+ for(const cat of CAT){const items=PRACTICE_ITEMS.filter(t=>t.cat===cat.id),done=items.filter(t=>practiceDayObject(practiceDate)[t.key]===true).length;
+ html+=`<div class="practice-group"><div class="practice-group-heading"><div>${CAT.findIndex(c=>c.id===cat.id)+1}. ${esc(cat.name)}</div><span>${done}/${items.length}</span></div>`;
+ for(const item of items){const isChecked=practiceDayObject(practiceDate)[item.key]===true;
+ html+=`<label class="practice-row ${isChecked?'is-done':''}"><input type="checkbox" data-practice-check="${esc(item.key)}" ${isChecked?'checked':''}><span class="practice-name">${esc(item.name)}</span></label>`}
+ html+='</div>';
+ }
+ html+=`<div class="row-actions"><button class="btn small ghost" type="button" id="practiceClear" ${count===0?'disabled':''}>Tyhjenn\u00e4 p\u00e4iv\u00e4n merkinn\u00e4t</button></div><p class="practice-instructions">Merkint\u00e4 kertoo vain, ett\u00e4 harjoittelit kyseist\u00e4 testi\u00e4. Mittaustulos ja viralliset pisteet kirjataan erikseen Testit-v\u00e4lilehdell\u00e4.</p></article>`;
+ html+=`<div class="section-head"><h2>Harjoittelun seuranta</h2><span class="hint">${esc(dateFi(week[0]))}\u2013${esc(dateFi(week[6]))}</span></div>`;
+ html+=`<article class="card"><h3 class="h2">Viikkon\u00e4kym\u00e4</h3><div class="practice-week">${week.map((k,i)=>{const v=checkedCount(k);return `<button type="button" data-practice-day="${k}" class="practice-week-day ${k===practiceDate?'selected':''} ${k===today?'today':''}" ${k>today?'disabled':''}><small>${['Ma','Ti','Ke','To','Pe','La','Su'][i]} ${Number(k.slice(8))}.</small><strong>${v}</strong><em>/${n}</em></button>`}).join('')}</div><div class="practice-overview"><div class="stat"><div class="smallcap">Harjoiteltuja p\u00e4ivi\u00e4</div><strong>${activeWeekDays} / 7</strong></div><div class="stat"><div class="smallcap">Viikon kuittauksia</div><strong>${weekCount}</strong></div></div><p class="practice-caption">Valitse kalenterista p\u00e4iv\u00e4 tarkistaaksesi sen merkinn\u00e4t. Kaikkia testej\u00e4 ei tarvitse harjoitella joka p\u00e4iv\u00e4.</p></article>`;
+ html+=`<article class="card"><h3 class="h2">Harjoituskertojen tilastot</h3><div class="practice-overview"><div class="stat"><div class="smallcap">28 pv aktiivisia</div><strong>${active28}</strong></div><div class="stat"><div class="smallcap">Kaikki merkinn\u00e4t</div><strong>${markCount}</strong></div></div><p class="practice-caption">Harjoitusp\u00e4ivi\u00e4 koko seurannassa: ${allDates.length}. Yksi harjoite voidaan kuitata kerran p\u00e4iv\u00e4ss\u00e4.</p><div class="practice-tablehead"><div>Testi</div><b>7 pv</b><b>28 pv</b><b>Kaikki</b></div>`;
+ const last7=recentPracticeKeys(7);
+ for(const cat of CAT){html+=`<div class="practice-group-heading">${esc(cat.name)}</div>`;
+ for(const item of PRACTICE_ITEMS.filter(t=>t.cat===cat.id)){
+ const c7=practiceCountIn(last7,item),c28=practiceCountIn(last28,item),all=practiceCountIn(allDates,item);
+ html+=`<div class="practice-summaryrow"><div class="practice-testname">${esc(item.name)}<div class="practice-graph"><div class="fill" style="width:${(c28/28*100).toFixed(1)}%"></div></div></div><b>${c7}</b><b>${c28}</b><b>${all}</b></div>`;
+ }}
+ html+=`<p class="practice-caption">7 pv ja 28 pv tarkoittavat liukuvaa jaksoa, joka p\u00e4\u00e4ttyy t\u00e4h\u00e4n p\u00e4iv\u00e4\u00e4n. Palkki kuvaa harjoiteltujen p\u00e4ivien osuutta 28 p\u00e4iv\u00e4st\u00e4.</p></article>`;
+ html+=`<div class="footer">Harjoitusmerkinn\u00e4t tallentuvat samalla selaimella kuin testitulokset ja sis\u00e4ltyv\u00e4t Asetukset-v\u00e4lilehden JSON-varmuuskopioon.</div>`;
+ el('view-practice').innerHTML=html;
+}
+// ===== END DAILY PRACTICE =====
+
 let progressA=null,progressB=null;
 function renderSettings(){const s=session();let html=`<div class="section-head"><h2>Testikerrat ja tallennus</h2></div><article class="card"><div class="smallcap">Valittu testikerta</div><div class="field" style="margin-top:12px"><label for="sessionName">Nimi</label><input class="control" id="sessionName" value="${esc(s.name)}" maxlength="70"></div><div class="field" style="margin-top:12px"><label for="sessionDate">Testipäivä</label><input class="control" id="sessionDate" type="date" value="${esc(s.date)}"></div><div class="field" style="margin-top:12px"><label for="sessionNotes">Muistiinpanot</label><textarea class="control" id="sessionNotes" rows="3" placeholder="esim. testipaikka, olosuhteet, palautuminen">${esc(s.notes||'')}</textarea></div><div class="row-actions"><button class="btn primary" id="saveSessionMeta">Tallenna tiedot</button><button class="btn" id="newSessionBtn">+ Uusi kierros</button></div><button class="btn danger" id="deleteSessionBtn" style="width:100%">Poista valittu testikerta</button><div class="notice">Testikierroksia voi luoda rajattomasti. Vanhan kierroksen tulokset säilyvät muuttumattomina, ellei niitä itse muokkaa tai poista.</div></article>`;
  html+=`<article class="card"><h3 class="h2">Koulukohtainen osio</h3><div class="field"><label for="schoolMode">Sisältyykö hakukoulun kokeeseen?</label><select class="control" id="schoolMode"><option value="no" ${state.school?'':'selected'}>Ei / ei vielä vahvistettu</option><option value="yes" ${state.school?'selected':''}>Kyllä, 8 pisteen osio</option></select></div><p class="hint">Jos käytössä, koulukohtainen osio on pakollinen ja korvaa heikoimman kuudesta valtakunnallisesta testikokonaisuudesta. Varmista asia hakukoulusta.</p></article>`;
- html+=`<article class="card"><h3 class="h2">Varmuuskopioi tiedot</h3><p class="hint">Kaikki tulokset, tavoitteet, testipäivät ja harjoitteluaika tallentuvat vain tämän selaimen muistiin. GitHub ei saa henkilökohtaisia tuloksia. Varmuuskopio kannattaa ottaa säännöllisesti.</p><div class="row-actions"><button class="btn primary" id="exportBtn">Lataa JSON</button><button class="btn" id="importBtn">Palauta JSON</button></div><input type="file" class="hidden" id="importFile" accept=".json,application/json"></article>`;
+ html+=`<article class="card"><h3 class="h2">Varmuuskopioi tiedot</h3><p class="hint">Kaikki tulokset, tavoitteet, testipäivät, harjoitusmerkinnät ja harjoitteluaika tallentuvat vain tämän selaimen muistiin. GitHub ei saa henkilökohtaisia tuloksia. Varmuuskopio kannattaa ottaa säännöllisesti.</p><div class="row-actions"><button class="btn primary" id="exportBtn">Lataa JSON</button><button class="btn" id="importBtn">Palauta JSON</button></div><input type="file" class="hidden" id="importFile" accept=".json,application/json"></article>`;
  html+=`<article class="card"><h3 class="h2">Viralliset lähteet</h3><div class="row-item"><span>Suoritusohjeet, videot ja äänitteet</span><a href="${OFFICIAL}" target="_blank" rel="noopener">Avaa ↗</a></div><div class="row-item"><span>Pisteytys 2026–2027 (PDF)</span><a href="${TABLES}" target="_blank" rel="noopener">Avaa ↗</a></div><p class="hint">Sovellus on yksityinen harjoittelutyökalu, ei virallinen koejärjestelmä. Mahdolliset vuoden 2027 muutokset tarkistetaan ennen soveltuvuuskoetta.</p></article>`;
  el('view-settings').innerHTML=html;
 }
-function renderAll(){renderSessionSelect();renderHome();renderTests();renderProgress();renderSettings();updateTabs()}
+function renderAll(){renderSessionSelect();renderHome();renderTests();renderProgress();renderPractice();renderSettings();updateTabs()}
 function newSession(){const n=state.sessions.length+1;const name=prompt('Uuden testikerran nimi','Uusintatesti '+n);if(name===null)return;const trimmed=name.trim();if(!trimmed){alert('Anna testikerralle nimi.');return}const id=uid();state.sessions.push({id,name:trimmed.slice(0,70),date:dayKey(),results:{},notes:''});state.active=id;persist();tab='tests';selectedTest=null;catFilter='all';renderAll();window.scrollTo(0,0)}
 function updateTestField(target){const t=tBy(target.dataset.test);if(!t)return;const field=t.fields.find(f=>f.key===target.dataset.field);if(!field)return;const val=target.value,where=target.dataset.scope==='current'?session().results:state.goals;
  if(!where[t.id])where[t.id]={};if(val==='')delete where[t.id][field.key];else where[t.id][field.key]=val;
  persist();refreshTestPreview();
 }
 function exportJson(){const data={app:'urhea-ellen',exportedAt:new Date().toISOString(),...state};const blob=new Blob([JSON.stringify(data,null,2)],{type:'application/json'});const href=URL.createObjectURL(blob),a=document.createElement('a');a.href=href;a.download='URHEA_Ellen_varmuuskopio_'+dayKey()+'.json';document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(href),1500)}
-async function importJson(file){if(!file)return;try{const x=JSON.parse(await file.text());if(x.app!=='urhea-ellen'||x.version!==1||!Array.isArray(x.sessions)||!x.sessions.length||typeof x.goals!=='object')throw new Error('Tiedosto ei ole tämän sovelluksen varmuuskopio.');if(!confirm('Korvataanko nykyiset tulokset varmuuskopion tiedoilla? Toimintoa ei voi perua.'))return;state={...fresh(),...x};if(!state.sessions.some(s=>s.id===state.active))state.active=state.sessions[0].id;persist();renderAll();alert('Varmuuskopio palautettu.')}catch(e){alert('Varmuuskopion avaaminen epäonnistui: '+e.message)}}
+async function importJson(file){if(!file)return;try{const x=JSON.parse(await file.text());if(x.app!=='urhea-ellen'||x.version!==1||!Array.isArray(x.sessions)||!x.sessions.length||typeof x.goals!=='object')throw new Error('Tiedosto ei ole tämän sovelluksen varmuuskopio.');if(!confirm('Korvataanko nykyiset tulokset varmuuskopion tiedoilla? Toimintoa ei voi perua.'))return;state={...fresh(),...x,practice:(x.practice&&typeof x.practice==='object'&&!Array.isArray(x.practice))?x.practice:{}};if(!state.sessions.some(s=>s.id===state.active))state.active=state.sessions[0].id;persist();renderAll();alert('Varmuuskopio palautettu.')}catch(e){alert('Varmuuskopion avaaminen epäonnistui: '+e.message)}}
 document.addEventListener('click',e=>{
  const b=e.target.closest('button');if(!b)return;
  if(b.dataset.tab){chooseTab(b.dataset.tab);return}
+ if(b.dataset.practiceDay){choosePracticeDate(b.dataset.practiceDay);return}
+ if(b.id==='practicePrev'){choosePracticeDate(shiftPracticeDay(practiceDate,-1));return}
+ if(b.id==='practiceNext'){choosePracticeDate(shiftPracticeDay(practiceDate,1));return}
+ if(b.id==='practiceToday'){choosePracticeDate(dayKey());return}
+ if(b.id==='practiceClear'){if(checkedCount(practiceDate)===0)return;if(!confirm('Tyhjennet\u00e4\u00e4nk\u00f6 valitun p\u00e4iv\u00e4n harjoitusmerkinn\u00e4t?'))return;delete state.practice[practiceDate];persist();renderPractice();return}
+
  if(b.dataset.openCat){catFilter=b.dataset.openCat;tab='tests';selectedTest=null;renderAll();window.scrollTo(0,0);return}
  if(b.dataset.openTest){selectedTest=b.dataset.openTest;tab='tests';renderAll();window.scrollTo(0,0);return}
  if(b.dataset.backTests){selectedTest=null;renderAll();window.scrollTo(0,0);return}
@@ -213,6 +301,9 @@ document.addEventListener('input',e=>{
 });
 document.addEventListener('change',e=>{
  const t=e.target;
+ if(t.dataset?.practiceCheck){setPracticeCheck(t.dataset.practiceCheck,t.checked);return}
+ if(t.id==='practiceDate'){choosePracticeDate(t.value);return}
+
  if(t.id==='activeSession'){state.active=t.value;persist();renderAll();return}
  if(t.id==='compareA'){progressA=t.value;renderProgress();return}
  if(t.id==='compareB'){progressB=t.value;renderProgress();return}
